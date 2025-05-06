@@ -19,7 +19,7 @@ Stremio Movie Search seamlessly integrates with Google search results, adding a 
 ## Installation
 
 ### From Chrome Web Store
-1. Visit the [Stremio Movie Search page](https://chromewebstore.google.com/detail/stremio-movie-search/your-extension-id) on the Chrome Web Store.
+1. Visit the [PENDING REVIEW] on the Chrome Web Store.
 2. Click "Add to Chrome" and follow the prompts to install.
 3. Optionally, ensure the Stremio app is installed on your device for app mode.
 
