@@ -1,14 +1,14 @@
 {
   "manifest_version": 3,
   "name": "Stremio Movie Search",
-  "version": "1.5",
-  "description": "Stremio Movie Search enhances your Google movie and TV searches by adding a Stremio icon next to IMDb links.",
+  "version": "1.6",
+  "description": "Adds Stremio buttons to movie pages on Google, IMDb, and Trakt.tv",
   "permissions": [
     "storage"
   ],
   "content_scripts": [
     {
-      "matches": ["*://www.google.com/search*"],
+      "matches": ["*://*.google.com/*", "*://*.imdb.com/*", "*://*.trakt.tv/*"],
       "js": ["content.js"],
       "run_at": "document_end"
     }
