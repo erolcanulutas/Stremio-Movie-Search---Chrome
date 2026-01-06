@@ -1,14 +1,20 @@
 {
   "manifest_version": 3,
   "name": "Stremio Movie Search",
-  "version": "1.6",
-  "description": "Adds Stremio buttons to movie pages on Google, IMDb, and Trakt.tv",
+  "version": "1.8",
+  "description": "Stremio Movie Search enhances your Google, DuckDuckGo, IMDb, and Trakt.tv experience by adding a Stremio icon next to show titles.",
   "permissions": [
     "storage"
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.google.com/*", "*://*.imdb.com/*", "*://*.trakt.tv/*"],
+      "matches": [
+        "*://www.google.com/search*",
+        "*://duckduckgo.com/*",
+        "*://www.imdb.com/title/*",
+        "*://trakt.tv/movies/*",
+        "*://trakt.tv/shows/*"
+      ],
       "js": ["content.js"],
       "run_at": "document_end"
     }
@@ -25,8 +31,8 @@
       "matches": ["<all_urls>"]
     }
   ],
-  "options_page": "options.html",
-  "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self';"
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
   }
 }
