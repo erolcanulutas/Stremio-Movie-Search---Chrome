@@ -93,4 +93,3 @@ There is **no build step**. The files in this repository are the source and are 
 - **Google country domains** (`google.com.tr`, `.de`, `.fr` and others) were never matched before, so the extension simply never loaded there.
 - Wider IMDb URL matching: tracking parameters, `m.imdb.com`, and hosts without `www`.
 - Settings are read in a way that works with both callback- and promise-style storage APIs, and falls back to defaults instead of failing silently.
-- Extension icon updated to the StremDB logo.
