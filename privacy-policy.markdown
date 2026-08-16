@@ -1,16 +1,22 @@
 # Privacy Policy for Stremio Movie Search
 
-**Last Updated: May 07, 2025**
+**Last Updated: August 16, 2026**
 
-This Privacy Policy describes how the Stremio Movie Search extension ("Extension"), developed by Erol Can Ulutas, handles user data. The Extension is designed to enhance Google search results by adding a Stremio button next to IMDb links, with options to open content in the Stremio app or web interface.
+This Privacy Policy describes how the Stremio Movie Search extension ("Extension"), developed by Erol Can Ulutas, handles user data. The Extension adds a Stremio button next to movie and TV show titles on Google, DuckDuckGo, IMDb and Trakt.tv, with options to open content in the Stremio app or web player.
 
 ## Data Collection
 
-The Extension does not collect, store, or transmit any personal or sensitive user data, including but not limited to names, email addresses, location data, web history, or user activity. No third-party services or analytics are integrated.
+The Extension does not collect, store, or transmit any personal or sensitive user data, including but not limited to names, email addresses, location data, browsing history, or user activity. No analytics, tracking or advertising services are integrated, and no account is required.
 
 ## Local Storage
 
-The Extension uses the browser's local storage to save a single user preference (choice between Stremio app or web), which is stored locally on the user's device and not accessed or shared by the developer.
+The Extension uses the browser's local storage to save five preferences: whether to open titles in the Stremio app or the web player, and whether the button is shown on Google, DuckDuckGo, IMDb and Trakt.tv respectively. These are stored locally on the user's device and are never accessed or shared by the developer.
+
+## Network Requests
+
+Trakt.tv no longer publishes IMDb IDs on its pages. When a Trakt.tv title page is open and no IMDb ID can be found in the page, the Extension sends the title and year — taken from the page's own URL, for example `/movies/inception-2010` — to Cinemeta (`https://v3-cinemeta.strem.io`), Stremio's public metadata service, in order to look up the matching IMDb ID.
+
+This is the only outbound request the Extension makes. It contains nothing but that title text: no identifiers, no cookies, no browsing history, and no information about the user. It happens only on Trakt.tv pages, and only when the Trakt.tv toggle is enabled in settings.
 
 ## Data Sharing
 
@@ -18,7 +24,7 @@ No user data is sold, shared, or transferred to third parties for any purpose, i
 
 ## Security
 
-All data handling is limited to local storage, and no transmission of user data occurs. The developer takes reasonable measures to ensure the Extension complies with applicable privacy standards.
+All preferences are held in local storage. The only network request is the metadata lookup described above, made over HTTPS.
 
 ## Changes to This Policy
 
